@@ -1,0 +1,44 @@
+{
+  "name": "millau-guardian",
+  "version": "0.0.1",
+  "description": "Filez millau guardian",
+  "private": true,
+  "scripts": {
+    "watch": "webpack --mode=development --watch --config config/webpack.config.js",
+    "build": "webpack --mode=production --config config/webpack.config.js",
+    "start": "webpack-dev-server --config ./config/webpack.config.js"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-component": "^1.1.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "copy-webpack-plugin": "^6.1.1",
+    "css-loader": "^4.3.0",
+    "cssnano": "^4.1.10",
+    "file-loader": "^6.1.0",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.1",
+    "mini-css-extract-plugin": "^0.10.1",
+    "nodemon": "^2.0.4",
+    "postcss-loader": "^4.0.2",
+    "postcss-preset-env": "^6.7.0",
+    "size-plugin": "^2.0.1",
+    "url-loader": "^4.1.0",
+    "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.1.4"
+  },
+  "dependencies": {
+    "@gitbeaker/browser": "^23.5.0",
+    "axios": "^0.20.0",
+    "babel-polyfill": "^6.26.0",
+    "element-ui": "^2.13.2",
+    "vue": "^2.6.12",
+    "vue-router": "^3.4.3"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "manifest_version": 2,
+  "name": "Millau Guardian",
+  "version": "0.2.6",
+  "description": "Filez 前端扩展",
+  "icons": {
+    "16": "icons/icon_16.png",
+    "32": "icons/icon_32.png",
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "点击打开filez gitlab面板",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage",
+    "contextMenus",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://console.box.lenovo.com/*",
+        "https://console.boxqa.lenovo.com/*",
+        "https://console.zbox.filez.com/*",
+        "http://test.lenovows.com/*",
+        "https://qa-t3.vips100.com/*",
+        "https://qa-t4.vips100.com/*",
+        "https://qa-t5.vips100.com/*",
+        "https://qa-t6.vips100.com/*"
+      ],
+      "run_at": "document_idle",
+      "js": [
+        "contentScript.js"
+      ]
+    }
+  ]
+}
